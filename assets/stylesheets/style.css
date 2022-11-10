@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    /* outline: 1px solid red; */
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+ clear: both;
+}
+html, body {
+    height: 100%;
+} 
+header{
+    float: left;
+    width: 100%;
+    background: rgba(245, 249, 252, 1);
+}
+nav{
+    float: left;
+    width: 100%;
+    background: rgba(245, 249, 252, 1);
+}
+header span{
+    float: left;
+    margin-left: 1em;
+  }
+header li{
+      float: left;
+      list-style: none;
+      margin-left: 2em;
+}
+.first_li{
+    margin: 0%;
+}
+header a{
+    text-decoration: none;
+    color: gray;
+}
+.header_button{
+    float: right;
+    margin-right: 1em;
+    padding: .3em .7em;
+    border-radius: 0px;
+    border: none;
+    background:rgba(43, 50, 94, 1);
+    color: white;
+}
+header ul{
+    margin-left: 36%; 
+}
+/* Main */
+main {
+    width: 100vw;
+    float: left;
+    background: rgba(245, 249, 252, 1);
+}
+main .Left{
+    width: 50vw;
+    float: left;
+    padding: 4em 3em;
+}
+main .Right{
+    width: 50vw;
+    float: left;
+}
+main span{
+    font-size: .7em;
+}
+main h1 {
+    font-size: 2em;
+    margin-top: .3em;
+}
+input {
+    margin-top: 1.5em;
+    padding: .2em 0;
+}
+.Left p{
+    font-size: 1em; 
+    margin-top: 1em;
+    padding: 0 3rem 0 0; 
+}
+.Left button{
+    margin-left: -5px;
+    padding: .3em .7em;
+    border-radius: 0px;
+    border: none;
+    background:rgba(43, 50, 94, 1);
+    color: white;
+}
+/* Image */
+.Right img{
+    float: right;
+    height: 400px;
+}
+/* Icons */
+i {
+    margin-bottom: 1em;
+}
+.first a + i{
+    font-size: .7em;
+}
+.second a + i{
+    font-size: .7em;
+}
+.third a + i{
+    font-size: .7em;
+}
+.fourth a + i{
+    font-size: .7em;
+}
+/* Bottom Section */
+.bottom_section h2{
+    margin-bottom: 1em;
+}
+.bottom_section p{
+    margin-bottom: 1em;
+}
+.bottom_section{
+    width: 100vw;
+    float: left;
+    background: rgba(245, 249, 252, 1);
+    padding: 0 3em 4em;
+    padding-right: 1.5em;
+}
+.bottom_section section{
+    width: 25%;
+    float: left;
+    margin-top: 3em;
+}
+.bottom_section a{
+    text-decoration: none;
+    color: black;
+}
+/* Collecting Section */
+.collectingSec{
+    width: 100%;
+    float: left;
+    padding: 3em 0 0em 3em;
+}
+.collectingSec h3{
+    font-size: 4em;
+    padding-bottom: .5em;
+}
+.collectingSec p{
+    font-size: 1.2em;
+    margin: 0 0 2em 0;
+}
+.collectingSec img{
+    max-width: 100%;
+    border: 1px solid black;
+}
+
+/* Media Screen */
+@media screen and (max-width: 900px){
+    header ul{
+        margin-left: 30%;
+    }
+}
+@media screen and (max-width: 650px){
+    header ul{
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 555px){
+    header ul{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px){
+    header{
+        text-align: center;
+        font-size: 2em;
+        border-bottom: 2px solid gray;
+        padding-bottom: .5em;
+        padding-top: .5em;
+    }
+    .source_span{
+        float: none;
+    }
+    .Left button{
+        display: block;
+        padding: 0.5em 5.2em;
+        margin-left: 0%;
+    }
+    input{
+        padding: .5em 0.3em;
+        border: none;
+        border-radius: 0%;
+        background: lightgray;
+    }
+    .header_button{
+        display: none;
+    }
+
+
+}
+@media screen and (max-width: 660px){
+    main .Right{
+        float: right;
+        width: 100vw;
+    }
+    main .Left{
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .bottom_section section{
+        float: none;
+        width: fit-content;
+    }
+    header ul{
+        margin-left: 25%;
+    }
+}
